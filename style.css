@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  border: none;
+  align-items: center;
+}
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  h1 {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-weight: 800;
+  }
+  
+
+/*
+
+Nav
+
+*/
+
+.nav__container {
+  display: flex;
+  margin-top: 48px;
+  margin-left: 24px;
+  max-width: 1400px;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: goldenrod;
+}
+
+.nav__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: .5;
+}
+
+.nav__address {
+  font-size: 18px;
+}
+
+button {
+  background-color: red;
+  height: 48px;
+  width: 164px;
+  align-items: center;
+  border-radius: 50%;
+  font-size: auto;
+  font-weight: 800;
+  color: White;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  color: rgb(236, 144, 144);
+}
+
+  .icon-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 270px;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: black;
+  background-color: red;
+  color: black;
+}
+
+
+  /*
+
+  Header
+
+  */
+
+.header__container {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  gap: 62px;
+}
+
+.header__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__button {
+  display: flex;
+  gap: 50px;
+}
+
+
+/*
+
+About
+
+*/
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 200px;
+}
+
+.about__info {
+  line-height: 2.5;
+  font-weight: 550;
+}
+
+.about__title {
+  font-weight: 900;
+  font-size: 62px;
+}
+
+
+/*
+
+Services
+
+*/
+
+.services__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.services__cards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-content: space-evenly;
+  
+}
+
+.services__card {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 40px) / 3);
+  grid-area: 24px;
+  background-color: red;
+  padding: 24px;
+  border-radius: 12px;
+  border-color: black;
+  border-width: 8px;
+  box-shadow: 0 4px 18px goldenrod;
+}
