@@ -46,9 +46,8 @@ Nav
 
 
 .nav__logo {
-  /* flex: 0 0 80px; */
-  height: 60%; 
-  width: auto; 
+  height: 190px;
+  width: 190px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -173,7 +172,7 @@ Services
 }
 
 .services__cards {
-  width: 100%;
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
@@ -200,17 +199,25 @@ YEARS
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 16px;
   width: 100%;
   max-width: 1400px;
   padding: 100px;
 }
 
+.recent__title {
+  color: lightblue;
+  font-size: 80px;
+}
+
 img {
-  max-width: 500px;
-  max-height: 300px;
+  width: 30%;
+  height: 250px; 
+  padding: 8px;
+  object-fit: cover; 
 }
 
 .log_img {
@@ -224,11 +231,30 @@ img {
 }
 
 .img__cabin {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
 
 }
 
 .img__home {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
 
+.img__special {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.special__title {
+  font-size: 48px;
+  color: blueviolet;
 }
 
 /*
@@ -249,6 +275,7 @@ text-align: center;
   line-height: 56px;
   color: aliceblue;
   align-items: center;
+  margin: 32px;
 }
 
 .footer__buttons {
@@ -266,4 +293,8 @@ text-align: center;
 
 .footer__icons {
   color: aliceblue;
+}
+
+.footer__info {
+  color: red;
 }
